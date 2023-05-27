@@ -1,0 +1,19 @@
+##########################
+# Versions updated to last on conda-forge and pypi
+# Author: Julian Bolivar
+# Date: 2023-05-27
+# Version: 1.0.0
+##########################
+name: eda
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.16
+  - mlflow
+  - numpy
+  - jupyterlab
+  - pandas
+  - pip>=23.1.2
+  - ydata-profiling
+  - pyarrow
