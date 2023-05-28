@@ -21,4 +21,9 @@ dependencies:
   - autopep8=2.0.2
   - git=2.40.1
   - pip>=23.1.2
-
+  - scikit-learn=1.2.2
+  - requests=2.31.0
+  - fastapi=0.95.2
+  - uvicorn=0.22.0
+  - gunicorn=20.1.0
+  

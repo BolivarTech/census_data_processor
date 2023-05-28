@@ -4,16 +4,17 @@
 # Date: 2023-05-27
 # Version: 1.0.0
 ##########################
-name: eda
+name: census-eda
 channels:
   - conda-forge
   - defaults
 dependencies:
   - python=3.8.16
-  - mlflow
-  - numpy
-  - jupyterlab
-  - pandas
+  - numpy=1.23.5
+  - jupyterlab=4.0.0
+  - pandas=1.5.3
+  - scikit-learn=1.2.2
   - pip>=23.1.2
-  - ydata-profiling
-  - pyarrow
+  - ydata-profiling=4.2.0
+  - ipywidgets=8.0.6
+  - pyarrow=12.0.0
