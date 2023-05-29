@@ -25,7 +25,7 @@ def train_model(X_train, y_train):
         'n_estimators': [10, 20, 30],
         'max_depth': [5, 10],
         'min_samples_split': [20, 50, 100],
-        'learning_rate': [1.0],  # 0.1,0.5,
+        'learning_rate': [0.1],  # 0.1,0.5,
     }
 
     njobs = multiprocessing.cpu_count() - 1

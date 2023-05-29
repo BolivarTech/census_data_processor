@@ -39,26 +39,26 @@ def build_argparser():
 
     parser = ArgumentParser(prog="model_trainner",
                             description="Train the model")
-    parser.add_argument(
+    parser.add_argument("-d",
         "--data", 
         type=str,
         help="Data Path",
-        default="../data/census_clean.csv",
-        required=True
+        default="../../data/census_clean.csv",
+        required=False
     )
-    parser.add_argument(
+    parser.add_argument("-m",
         "--modelpath", 
         type=str,
         help="Path where the model is saved",
-        default="../model",
-        required=True
+        default="../../model",
+        required=False
     )
-    parser.add_argument(
+    parser.add_argument("-s",
         "--slicefile", 
         type=str,
         help="File where the slices test result are saved",
         default="./slice_output.txt",
-        required=True
+        required=False
     )
     return parser.parse_args()
 
@@ -137,7 +137,7 @@ def main(args):
     # Else Train and save a model.
     else:
         model = train_model(X_train, y_train)
-        # save model  to disk in ./model folder
+        # save model  to disk 
         pickle.dump(model, open(os.path.join(savepath,filename[0]), 'wb'))
         pickle.dump(encoder, open(os.path.join(savepath,filename[1]), 'wb'))
         pickle.dump(lb, open(os.path.join(savepath,filename[2]), 'wb'))
