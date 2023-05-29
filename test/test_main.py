@@ -13,6 +13,12 @@ from fastapi.testclient import TestClient
 #from fastapi import HTTPException
 import json
 import logging
+import os,sys
+
+# Trick to use modules from parent directory
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
 
 from main import app
 

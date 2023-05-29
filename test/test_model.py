@@ -9,13 +9,18 @@ Date:  2023-05-29
 Revision 1.0.0 (2023-05-29): Initial Release
 """
 
-import pytest, os, logging, pickle
+import pytest, os, sys, logging, pickle
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.exceptions import NotFittedError
 
-from ml.model import inference, compute_model_metrics, compute_confusion_matrix
-from ml.data import process_data
+# Trick to use modules from parent directory
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+
+from src.ml.model import inference, compute_model_metrics, compute_confusion_matrix
+from src.ml.data import process_data
 
 
 """
