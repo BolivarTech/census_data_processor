@@ -50,7 +50,7 @@ def test_inference():
                 'sex':"Female",
                 'capital_gain':0,
                 'capital_loss':0,
-                'hours_per_week':50,
+                'hours_per_week':40,
                 'native_country':"United-States"
             }
 

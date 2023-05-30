@@ -30,13 +30,13 @@ use the return of data() as an argument
 @pytest.fixture(scope="module")
 def data():
     # code to load in the data.
-    datapath = "./data/census.csv"
+    datapath = "./data/census_clean.csv"
     return pd.read_csv(datapath)
 
 
 @pytest.fixture(scope="module")
 def path():
-    return "./data/census.csv"
+    return "./data/census_clean.csv"
 
 
 @pytest.fixture(scope="module")
