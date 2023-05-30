@@ -62,7 +62,8 @@ jupyter-lab
 
 The easy way to test the API is using the docs and test the samples at:
 
-<https://census-data-processor.onrender.com/docs>
+[![Online Documentation](screenshots/example.png)](https://census-data-processor.onrender.com/docs)
+
 
 On the documentation the API usage can be found.
 
