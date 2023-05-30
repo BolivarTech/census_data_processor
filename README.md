@@ -71,6 +71,23 @@ On the documentation the API usage can be found.
 service maybe stopped due inactivity and when it is accessed by first time, it look
 some time to restart the service and it can look irresponsive for a while.
 
+## Continuos Integration (CI) example
+
+![Continuos Integration](screenshots/continuous_integration.png)
+
+## Continuos Deployment (CI) example
+
+![Continuos Deployment](screenshots/continuous_deloyment.png)
+
+## Live API example
+
+### GET example
+![GET](screenshots/live_get.png)
+
+### POST example
+![POST](screenshots/live_post.png)
+
+
 ## Authorship
 
 [Julian Bolivar](https://www.linkedin.com/in/jbolivarg), 2023.  
