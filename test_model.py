@@ -14,11 +14,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.exceptions import NotFittedError
 
-# Trick to use modules from parent directory
-currentdir = os.path.dirname(os.path.realpath(__file__))
-parentdir = os.path.dirname(currentdir)
-sys.path.append(parentdir)
-
 from src.ml.model import inference, compute_model_metrics, compute_confusion_matrix
 from src.ml.data import process_data
 
